@@ -22,7 +22,7 @@ else
     export PS1="$GREEN\u@\h:$BLUE\W$PURPLE$GIT$END\$ "
 fi
 
-# ========
+# ======================================================
 
 # Aliases
 alias ls="ls --color=auto"
@@ -33,12 +33,13 @@ alias vi="vim"
 # Exports
 export EDITOR="vim"
 
-# Private bin dir
+# ======================================================
+
+# Use "$HOME/bin" for private executables
 PATH=$HOME/bin:$PATH
 
-# ========
-
-# Source useful scripts or add additional paths to $HOME/.devquipment
+# Use "$HOME/.devquipment" for bash extensions to source
 EXTENSIONDIR="$HOME/.devquipment/"
-for extension in $(ls $EXTENSIONDIR); do source $EXTENSIONDIR/$extension; done
-PATH=$EXTENSIONDIR:$PATH
+if [ -d $EXTENSIONS ]; then
+    for extension in $(ls $EXTENSIONDIR); do source $EXTENSIONDIR/$extension; done
+fi
