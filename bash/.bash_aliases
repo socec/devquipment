@@ -39,5 +39,6 @@ PATH=$HOME/bin:$PATH
 # ========
 
 # Source useful scripts or add additional paths to $HOME/.devquipment
-source $HOME/.devquipment/*
-PATH=$HOME/.devquipment/:$PATH
+EXTENSIONDIR="$HOME/.devquipment/"
+for extension in $(ls $EXTENSIONDIR); do source $EXTENSIONDIR/$extension; done
+PATH=$EXTENSIONDIR:$PATH
