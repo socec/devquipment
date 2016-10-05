@@ -40,6 +40,6 @@ PATH=$HOME/bin:$PATH
 
 # Use "$HOME/.devquipment" for bash extensions to source
 EXTENSIONDIR="$HOME/.devquipment/"
-if [ -d $EXTENSIONS ]; then
+if [ -d $EXTENSIONDIR ]; then
     for extension in $(ls $EXTENSIONDIR); do source $EXTENSIONDIR/$extension; done
 fi
