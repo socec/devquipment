@@ -10,3 +10,10 @@ screen/
 -------
 Configuration for screen.  
 Copy to "$HOME". Also to remote machines accessed with screen.
+
+
+vim/
+----
+Configuration for Vim.  
+Copy to "$HOME".
+
