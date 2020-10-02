@@ -1,5 +1,8 @@
 " Inspired by: https://github.com/amix/vimrc
 
+" Colorscheme
+colorscheme desert
+
 " Line numbers
 set number
 
