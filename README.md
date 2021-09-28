@@ -6,6 +6,12 @@ bash/
 Configuration for bash.  
 Copy to "$HOME". Add extensions to "$HOME/.devquipment". Add executables to "$HOME/bin".
 
+
+cmake/
+-----
+Helper scripts for building and testing with CMake.
+
+
 screen/
 -------
 Configuration for screen.  
